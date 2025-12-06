@@ -10,7 +10,7 @@ import { Link } from 'expo-router';
 export default function HomeScreen() {
   return (
     <ParallaxScrollView
-      headerBackgroundColor={{ light: '#A1CEDC', dark: '#1D3D47' }}
+      headerBackgroundColor={{ light: '#ec7220ff', dark: '#d76213ff' }}
       headerImage={
         <Image
           source={require('@/assets/images/partial-react-logo.png')}
@@ -18,11 +18,11 @@ export default function HomeScreen() {
         />
       }>
       <ThemedView style={styles.titleContainer}>
-        <ThemedText type="title">Welcome!</ThemedText>
+        <ThemedText type="title">HOTSALE</ThemedText>
         <HelloWave />
       </ThemedView>
       <ThemedView style={styles.stepContainer}>
-        <ThemedText type="subtitle">Step 1: Try it</ThemedText>
+        <ThemedText type="subtitle">Fideliza tus clientes</ThemedText>
         <ThemedText>
           Edit <ThemedText type="defaultSemiBold">app/(tabs)/index.tsx</ThemedText> to see changes.
           Press{' '}
@@ -39,7 +39,7 @@ export default function HomeScreen() {
       <ThemedView style={styles.stepContainer}>
         <Link href="/modal">
           <Link.Trigger>
-            <ThemedText type="subtitle">Step 2: Explore</ThemedText>
+            <ThemedText type="subtitle">Crea ofertas que vendan</ThemedText>
           </Link.Trigger>
           <Link.Preview />
           <Link.Menu>
@@ -61,17 +61,17 @@ export default function HomeScreen() {
         </Link>
 
         <ThemedText>
-          {`Tap the Explore tab to learn more about what's included in this starter app.`}
+          {`La app debe sugerir que hacer al cliente.`}
         </ThemedText>
       </ThemedView>
       <ThemedView style={styles.stepContainer}>
-        <ThemedText type="subtitle">Step 3: Get a fresh start</ThemedText>
+        <ThemedText type="subtitle">Crece tu flujo de clientes y de ganancias</ThemedText>
         <ThemedText>
-          {`When you're ready, run `}
-          <ThemedText type="defaultSemiBold">npm run reset-project</ThemedText> to get a fresh{' '}
-          <ThemedText type="defaultSemiBold">app</ThemedText> directory. This will move the current{' '}
-          <ThemedText type="defaultSemiBold">app</ThemedText> to{' '}
-          <ThemedText type="defaultSemiBold">app-example</ThemedText>.
+          {`Atraeras mas `}
+          <ThemedText type="defaultSemiBold">clientes</ThemedText> ganaras mas dinero{' '}
+          <ThemedText type="defaultSemiBold">con hotsale</ThemedText> esta te ayudara con IA para ganar mas{' '}
+          <ThemedText type="defaultSemiBold">dinero</ThemedText> y{' '}
+          <ThemedText type="defaultSemiBold">fidelizar mas clientes</ThemedText>.
         </ThemedText>
       </ThemedView>
     </ParallaxScrollView>
